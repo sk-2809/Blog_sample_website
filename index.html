@@ -1,0 +1,269 @@
+<!-- 
+Note-This page is created keeping in mind that I am creating a blog website because content is scrapped from the website provided for this assignment.
+I have taken care of proper comment and indentation as far as i think it will be required for proper and clear checking.
+Please insure you internet connection before you open this in browser(I will prefer you to open this in google chrome btw I have taken care of all js property in all browser)as I used CDN which will obviously require internet connection.
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS file used downloaded version -->
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <!-- Css file containing all property of Page -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Css file for hamburger button in Nav-bar-->
+  <link rel="stylesheet" href="CSS/hamburger.css">
+  <!-- CDN of Google Font(GameMania)  -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- CDN for icon used in Footer-->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- CDN for icon used -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- CDN for aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>Blog</title>
+</head>
+
+<body>
+  <div class="header" id="topheader">
+    <!-- Navbar Start -->
+    <div class="fixed-top">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container text-uppercase p-2">
+              <!-- NavBar Menu-This menu will remain hidden untill you click on Hamberger button present in fixed Navbar-->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto text-uppercase">
+                  <!-- Menu linking to different section -->
+                  <li class="nav-item active"><a class="nav-link" href="#Header">Home <span
+                        class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#pricingdiv">Categories</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#footerdiv">About</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark">
+        <div class="container">
+          <!-- Heading and sub heading of fixed Navbar-Used Id for styling-It's styling is done in header section above -->
+          <div>
+            <h1 id="uniqueh1">BlogMania</h1>
+            <p id="Intro">A hub for blog reader</p>
+          </div>
+          <!-- HambergurButton -->
+          <div class="menu-btn" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="menu-btn__burger">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- Header Start -->
+    <section class="header-section">
+      <div class="center-div">
+        <div>
+          <!-- This heading is fixed and do not have any effect.-->
+          <h1 class="font-weight-bold">We are The</h1>
+          <!-- This heading has a typing effect-contain a class name "beta" -->
+          <h1 class="font-weight-bold beta"></h1>
+        </div>
+        <p>We provide content to world.</p>
+        <div class="header-buttons">
+          <!-- Below are two button/link which will take you to section of contact and aboutus -->
+          <a href="#pricingdiv">Categories</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="pricing" id="pricingdiv">
+    <div class="container headings text-center">
+      <h1 class="text-center font-weight-bold text-white"> Categories...</h1>
+      <h3 class="text-center text-white"> We believe in Content Quality !!</h3>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- This is divided into three columns-using grid system -->
+        <div class="col-lg-4 col-12" data-aos="zoom-in-up">
+          <div class="card text-center">
+            <div class="card-header">Y-Combinator</div>
+            <div class="card-body">
+              <li><span class="money">Startup</span>Blog</li>
+              <li>Everyday One Blog</li>
+            </div>
+            <div class="card-footer">
+              <a href="/categories/y-c.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12 card-second">
+          <div class="card text-center">
+            <div class="card-header">Entrepreneurial World</div>
+            <div class="card-body">
+              <li><span class="money">Entrepreneur</span>Blog</li>
+              <li>All about Entrepreneurship</li>
+            </div>
+            <div class="card-footer">
+              <a href="/categories/e.html">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12" data-aos="zoom-in-up">
+          <div class="card text-center">
+            <div class="card-header">Others</div>
+            <div class="card-body">
+              <li><span class="money">FilmWorld</span>Blog</li>
+              <li>All about bollywood</li>
+            </div>
+            <div class="card-footer">
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contactus" id="contact">
+    <div class="container headings text-center">
+      <h1 class="text-center font-weight-bold"> CONTACT US</h1>
+      <p class="text-center text-capitalize pt-1"> Please let us Know your review.Fill the following Form.</p>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
+          <form>
+            <div class="form-group">
+
+              <input type="text" class="form-control" id="username" aria-describedby="emailHelp" required
+                autocomplete="off" placeholder="Your Good Name">
+
+            </div>
+            <div class="form-group">
+
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required
+                autocomplete="off" placeholder="Email">
+
+            </div>
+            <div class="form-group">
+
+              <input type="text" class="form-control" id="mobile" aria-describedby="emailHelp" required
+                autocomplete="off" placeholder="Contact No">
+
+            </div>
+            <div class="form-group">
+
+              <textarea class="form-control" rows="3" id="comment" placeholder="Comment"></textarea>
+            </div>
+            <div class="d-flex justify-content-center form-button">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footersection" id="footerdiv">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 footer-div">
+          <div>
+            <h3>ABOUT DEVELOPER</h3>
+            <p>This is Sachin Kumar,a Second Year undergraduate at IIT Bombay.I am currently Pursuing my B.Tech+M.Tech
+              degree in Metallurical engineering and material science Department.I am always been very curious in
+              learning about working of Webites and app.I
+            </p>
+          </div>
+
+        </div>
+        <div class="col-lg-6 col-md-12 col-12 footer-div">
+          <div>
+            <h3>Contact Developer</h3>
+            <p>
+              This is Sachin Kumar,a very enthusistic in learning web development and app development.
+            </p>
+            <a href="https://www.facebook.com/skiitb"><img
+                src="https://img.icons8.com/fluent/48/000000/facebook-new.png" /></a>
+            <a href="https://www.instagram.com/sachin_kr2809/"><img
+                src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
+                <a href="https://www.linkedin.com/in/sachin-kumar-b7b089190/"><img
+                  src="https://img.icons8.com/fluent/48/000000/linkedin.png" /></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="mt-5 text-center">
+        <p>
+          Copyright @Sachin
+        </p>
+      </div>
+      <div class="scrollTop float-right">
+        <i class="fa fa-arrow-up" onclick="topFunction()" id="mybtn"></i>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- JqueryCDN,WaypointCDN,Counterup cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <!-- Linking main.js containing code for hamburger button in navbar -->
+  <script src="Js/hamburger.js"></script>
+  <!-- Adding js file for typing effect in header section -->
+  <script src="Js/typingeffect.js"></script>
+  <!--CDN For aos-js files  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 200
+    });
+  </script>
+  <script>
+    //js code for button appearing after scrolling
+    // get the button:
+    mybutton = document.getElementById("mybtn");
+    // When the user scrolls down 20px from top of the document,show the button
+    window.onscroll = function () { scrollFunction() };
+    //defining scrollFunction
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // code for button,when the user clicks on the button ,scroll to the top of the document defined above
+    function topFunction() {
+      // For Safari
+      document.body.scrollTop = 0;
+      // For chrome,Firefox,IE and Opera
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
