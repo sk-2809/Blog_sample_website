@@ -1,4 +1,5 @@
-This page is created keeping in mind that I am creating a game website because content is not a real purpose of this assignment i also used the lorem ipsum text many times.I have given all features which had been asked in assignment in this page.
+<!-- 
+Note-This page is created keeping in mind that I am creating a blog website because content is scrapped from the website provided for this assignment.
 I have taken care of proper comment and indentation as far as i think it will be required for proper and clear checking.
-Please insure you internet connection before you open this in browser(I will prefer you to open this in google chrome btw I have taken care of all js property in all browser)as I used many CDN which will obviously require internet connection.
-i have used image and icon directly from the link so In this folder i am not giving any images or icons which i have used.
+Please insure you internet connection before you open this in browser(I will prefer you to open this in google chrome btw I have taken care of all js property in all browser)as I used CDN which will obviously require internet connection.
+-->
